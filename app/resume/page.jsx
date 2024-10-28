@@ -15,11 +15,11 @@ import {
   FaHtml5,
   FaCss3,
   FaJs,
+  FaJava,
   FaReact,
   FaFigma,
   FaNodeJs,
   FaPhp,
-  FaBootstrap,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -29,6 +29,13 @@ import {
   SiMysql,
   SiExpress,
   SiCanva,
+  SiShadcnui,
+  SiFirebase,
+  SiLaravel,
+  SiAppwrite,
+  SiTrello,
+  SiVisualstudiocode,
+  SiC,
 } from "react-icons/si";
 
 const about = {
@@ -196,12 +203,20 @@ const skills = {
       name: "CSS 3",
     },
     {
-      icon: <FaBootstrap />,
-      name: "Bootstrap",
+      icon: <SiShadcnui />,
+      name: "Shadcn UI",
     },
     {
       icon: <SiTailwindcss />,
       name: "Tailwind CSS",
+    },
+    {
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <SiC />,
+      name: "C",
     },
     {
       icon: <FaJs />,
@@ -228,6 +243,10 @@ const skills = {
       name: "Express JS",
     },
     {
+      icon: <SiLaravel />,
+      name: "Laravel",
+    },
+    {
       icon: <FaPhp />,
       name: "PHP",
     },
@@ -236,8 +255,24 @@ const skills = {
       name: "MongoDB",
     },
     {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
       icon: <SiMysql />,
       name: "MySQL",
+    },
+    {
+      icon: <SiAppwrite />,
+      name: "Appwrite",
+    },
+    {
+      icon: <SiTrello />,
+      name: "Trello",
+    },
+    {
+      icon: <SiVisualstudiocode />,
+      name: "VS Code",
     },
     {
       icon: <FaFigma />,
