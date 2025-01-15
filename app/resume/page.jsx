@@ -36,6 +36,8 @@ import {
   SiTrello,
   SiVisualstudiocode,
   SiC,
+  SiGithub,
+  SiVercel,
 } from "react-icons/si";
 
 const about = {
@@ -281,6 +283,14 @@ const skills = {
     {
       icon: <SiCanva />,
       name: "Canva",
+    },
+    {
+      icon: <SiGithub />,
+      name: "GitHub",
+    },
+    {
+      icon: <SiVercel />,
+      name: "Vercel",
     },
   ],
 };
