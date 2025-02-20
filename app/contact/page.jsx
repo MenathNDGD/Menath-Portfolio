@@ -127,12 +127,12 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                 />
-                <div className="flex gap-2">
+                <div className="flex items-center w-full">
                   <PhoneInput
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(phone) => setFormData({ ...formData, phone })}
-                    className="flex items-center"
+                    className="flex items-center w-full"
                     required
                   />
                 </div>
