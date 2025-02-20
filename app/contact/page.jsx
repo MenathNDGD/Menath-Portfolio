@@ -127,13 +127,15 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                 />
-                <PhoneInput
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={(phone) => setFormData({ ...formData, phone })}
-                  className="flex flex-wrap items-center"
-                  required
-                />
+                <div className="flex items-center">
+                  <PhoneInput
+                    placeholder="Phone Number"
+                    value={formData.phone}
+                    onChange={(phone) => setFormData({ ...formData, phone })}
+                    className="flex items-center w-full"
+                    required
+                  />
+                </div>
               </div>
               <Select
                 onValueChange={(value) =>
