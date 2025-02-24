@@ -39,7 +39,7 @@ const PhoneInput = React.forwardRef(
 PhoneInput.displayName = "PhoneInput";
 
 const InputComponent = React.forwardRef(({ className, ...props }, ref) => (
-  <Input className={cn("flex-grow", className)} {...props} ref={ref} />
+  <Input className={cn("flex-grow w-full", className)} {...props} ref={ref} />
 ));
 InputComponent.displayName = "InputComponent";
 
