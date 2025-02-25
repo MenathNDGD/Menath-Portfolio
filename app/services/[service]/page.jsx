@@ -50,7 +50,7 @@ const ServicePage = ({ params }) => {
                 </p>
               </div>
             </ScrollArea>
-            <div className="flex flex-col items-center gap-2 space-y-4 md:flex-row md:space-y-0 md:space-x-4">
+            <div className="flex flex-row items-center gap-2 md:space-y-0 md:space-x-4">
               <Link href="/contact">
                 <Button className="px-6 py-3 font-semibold transition-all duration-300 rounded-md text-primary bg-accent hover:bg-accent-hover">
                   Get Started
@@ -58,7 +58,7 @@ const ServicePage = ({ params }) => {
               </Link>
               <Link href="/services">
                 <Button className="px-6 py-3 font-semibold transition-all duration-300 rounded-md text-primary bg-accent hover:bg-accent-hover">
-                  View All Services
+                  Go Back
                 </Button>
               </Link>
             </div>
