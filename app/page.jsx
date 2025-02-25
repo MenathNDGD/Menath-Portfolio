@@ -3,7 +3,6 @@
 import { FiDownload } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 
-// INFO: Importing components
 import Socials from "@/components/Socials";
 import ProfilePic from "@/components/ProfilePic";
 import Stats from "@/components/Stats";
