@@ -1,4 +1,10 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkedAlt,
+  FaLinkedin,
+  FaGithub,
+} from "react-icons/fa";
 
 const info = [
   {
@@ -22,6 +28,19 @@ const info = [
         "https://www.google.com/maps/search/?api=1&query=Colombo,+Sri+Lanka",
         "_blank"
       ),
+  },
+  {
+    icon: <FaLinkedin />,
+    title: "LinkedIn",
+    description: "Connect with me on LinkedIn",
+    action: () =>
+      window.open("https://www.linkedin.com/in/menath-ndgd/", "_blank"),
+  },
+  {
+    icon: <FaGithub />,
+    title: "GitHub",
+    description: "Check out my GitHub",
+    action: () => window.open("https://github.com/MenathNDGD", "_blank"),
   },
 ];
 
