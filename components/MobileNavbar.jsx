@@ -7,29 +7,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-
-const links = [
-  {
-    name: "Home",
-    path: "/",
-  },
-  {
-    name: "Services",
-    path: "/services",
-  },
-  {
-    name: "Resume",
-    path: "/resume",
-  },
-  {
-    name: "Work",
-    path: "/work",
-  },
-  {
-    name: "Contact",
-    path: "/contact",
-  },
-];
+import navLinks from "@/data/navbarData";
 
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -61,7 +39,7 @@ const MobileNavbar = () => {
         </div>
 
         <nav className="flex flex-col items-center justify-center gap-8 -mt-20">
-          {links.map((link, index) => {
+          {navLinks.map((link, index) => {
             return (
               <Link
                 href={link.path}
