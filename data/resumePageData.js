@@ -1,23 +1,24 @@
+import { FaJava } from "react-icons/fa";
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaJava,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-  FaPhp,
-} from "react-icons/fa";
-import {
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiFigma,
+  SiNodedotjs,
+  SiPhp,
+  SiPython,
   SiTailwindcss,
   SiNextdotjs,
   SiTypescript,
+  SiJavascript,
   SiMongodb,
   SiMysql,
   SiExpress,
   SiCanva,
   SiShadcnui,
   SiFirebase,
+  SiSupabase,
+  SiPostgresql,
   SiLaravel,
   SiAppwrite,
   SiTrello,
@@ -25,6 +26,7 @@ import {
   SiC,
   SiGithub,
   SiVercel,
+  SiFreepik,
 } from "react-icons/si";
 
 const about = {
@@ -184,11 +186,11 @@ const skills = {
     "I have experience working with various technologies and frameworks, such as React, Node.js, and Firebase, enabling me to build robust and scalable applications.",
   skillList: [
     {
-      icon: <FaHtml5 />,
+      icon: <SiHtml5 />,
       name: "HTML 5",
     },
     {
-      icon: <FaCss3 />,
+      icon: <SiCss3 />,
       name: "CSS 3",
     },
     {
@@ -200,15 +202,7 @@ const skills = {
       name: "Tailwind CSS",
     },
     {
-      icon: <FaJava />,
-      name: "Java",
-    },
-    {
-      icon: <SiC />,
-      name: "C",
-    },
-    {
-      icon: <FaJs />,
+      icon: <SiJavascript />,
       name: "JavaScript",
     },
     {
@@ -216,7 +210,7 @@ const skills = {
       name: "TypeScript",
     },
     {
-      icon: <FaReact />,
+      icon: <SiReact />,
       name: "React JS",
     },
     {
@@ -224,7 +218,7 @@ const skills = {
       name: "Next JS",
     },
     {
-      icon: <FaNodeJs />,
+      icon: <SiNodedotjs />,
       name: "Node JS",
     },
     {
@@ -236,12 +230,28 @@ const skills = {
       name: "Laravel",
     },
     {
-      icon: <FaPhp />,
+      icon: <SiPhp />,
       name: "PHP",
+    },
+    {
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <SiC />,
+      name: "C",
+    },
+    {
+      icon: <SiPython />,
+      name: "Python",
     },
     {
       icon: <SiMongodb />,
       name: "MongoDB",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
     },
     {
       icon: <SiFirebase />,
@@ -252,24 +262,16 @@ const skills = {
       name: "MySQL",
     },
     {
+      icon: <SiPostgresql />,
+      name: "PostgreSQL",
+    },
+    {
       icon: <SiAppwrite />,
       name: "Appwrite",
     },
     {
-      icon: <SiTrello />,
-      name: "Trello",
-    },
-    {
       icon: <SiVisualstudiocode />,
       name: "VS Code",
-    },
-    {
-      icon: <FaFigma />,
-      name: "Figma",
-    },
-    {
-      icon: <SiCanva />,
-      name: "Canva",
     },
     {
       icon: <SiGithub />,
@@ -278,6 +280,22 @@ const skills = {
     {
       icon: <SiVercel />,
       name: "Vercel",
+    },
+    {
+      icon: <SiTrello />,
+      name: "Trello",
+    },
+    {
+      icon: <SiFigma />,
+      name: "Figma",
+    },
+    {
+      icon: <SiCanva />,
+      name: "Canva",
+    },
+    {
+      icon: <SiFreepik />,
+      name: "Freepik",
     },
   ],
 };
