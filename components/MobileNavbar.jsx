@@ -40,21 +40,22 @@ const MobileNavbar = () => {
 
         <nav className="flex flex-col items-center justify-center gap-8 -mt-20">
           {navLinks.map((link, index) => {
+            const isActive =
+              link.path === pathname || pathname.startsWith(`${link.path}/`);
+
             return (
               <Link
                 href={link.path}
                 key={index}
                 onClick={handleLinkClick}
                 className={`${
-                  link.path === pathname &&
-                  "text-accent border-b-2 border-accent"
-                } text-xl capitalize hover:text-accent transition-all`}
+                  isActive ? "text-accent border-b-2 border-accent" : ""
+                } capitalize font-medium hover:text-accent transition-all`}
               >
                 {link.name}
               </Link>
             );
           })}
-
           <Link href={"/contact"} onClick={handleLinkClick}>
             <Button>Hire me</Button>
           </Link>
