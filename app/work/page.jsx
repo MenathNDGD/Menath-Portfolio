@@ -98,7 +98,7 @@ const Work = () => {
                         <BsGithub className="text-3xl text-white group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
-                        <p>Github Repository</p>
+                        <p>GitHub Repository</p>
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
