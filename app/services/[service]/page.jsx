@@ -69,7 +69,7 @@ const ServicePage = ({ params }) => {
               <div className="relative w-full h-full">
                 <Image
                   src={serviceData.image}
-                  className="object-cover"
+                  className="object-contain"
                   fill
                   alt={serviceData.title}
                 />
