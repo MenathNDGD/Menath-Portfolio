@@ -11,6 +11,18 @@ const serviceDetails = {
       "In addition, I understand the importance of ongoing support and maintenance. I provide clients with the tools and knowledge necessary to manage their websites post-launch, ensuring they remain relevant and effective in an ever-evolving digital landscape. My commitment to quality, innovation, and client satisfaction drives me to exceed expectations and deliver exceptional results.",
     image: "/assets/service/web-development.png",
   },
+  "web-applications": {
+    title: "Web Applications",
+    description1:
+      "I specialize in developing robust web applications tailored to meet the unique needs of businesses across various industries. My goal is to create dynamic and user-friendly solutions that streamline processes, enhance productivity, and drive growth.",
+    description2:
+      "In today's digital landscape, having a well-designed web application is crucial for businesses looking to stay competitive. I leverage the latest technologies and best practices to build applications that are not only functional but also scalable and secure. From initial concept to deployment, I work closely with clients to understand their specific requirements and goals. This collaborative approach ensures that the final product aligns perfectly with their vision.",
+    description3:
+      "My web applications are designed to automate repetitive tasks, allowing teams to focus on more strategic initiatives. By integrating features such as real-time data analytics, user authentication, and intuitive dashboards, I empower businesses to make informed decisions quickly. Additionally, I prioritize responsiveness and accessibility, ensuring that users can access applications seamlessly across devices and platforms.",
+    description4:
+      "I also emphasize ongoing support and maintenance, recognizing that the launch of an application is just the beginning. My commitment to client satisfaction includes regular updates and improvements based on user feedback and technological advancements. Whether you are looking to develop a customer relationship management system, an e-commerce platform, or an internal workflow tool, I have the expertise to turn your ideas into reality, helping your business thrive in an ever-evolving marketplace.",
+    image: "/assets/service/web-applications.png",
+  },
   "ui-ux-design": {
     title: "UI/UX Design",
     description1:
@@ -35,6 +47,30 @@ const serviceDetails = {
       "Finally, once the logo is finalized, I deliver a comprehensive branding package that includes various file formats and guidelines for usage. This ensures your logo maintains its integrity across all applications, from business cards to social media. A well-designed logo is an investment in your brand's future, and I'm committed to helping you create a visual identity that leaves a mark.",
     image: "/assets/service/logo-design.png",
   },
+  "video-editing": {
+    title: "Video Editing",
+    description1:
+      "In today's digital landscape, compelling video content is essential for businesses looking to engage their audience and convey their messages effectively. My video editing services are designed to help organizations create visually stunning and impactful videos that resonate with viewers. Whether you need promotional videos, training materials, or event highlights, I leverage my expertise to craft narratives that capture attention and drive results.",
+    description2:
+      "With a keen eye for detail and a strong understanding of storytelling, I transform raw footage into polished productions. I work closely with clients to understand their vision, brand identity, and specific goals. This collaborative approach ensures that the final product not only meets but exceeds expectations. I utilize advanced editing techniques, including color correction, sound design, and motion graphics, to enhance the overall quality and professionalism of each video",
+    description3:
+      "In addition to technical skills, I emphasize the importance of pacing and flow in video editing. Each project is carefully structured to maintain viewer engagement from start to finish. By incorporating the right visual elements and transitions, I create a seamless viewing experience that captivates audiences. My commitment to quality and creativity ensures that your message is communicated clearly and effectively.",
+    description4:
+      "Ultimately, my goal is to help your business stand out in a crowded marketplace. With customized video content tailored to your specific needs, I aim to elevate your brand presence and foster a deeper connection with your audience. Let’s collaborate to turn your ideas into compelling videos that leave a lasting impression.",
+    image: "/assets/service/video-editing.png",
+  },
+  "content-writing": {
+    title: "Content Writing",
+    description1:
+      "In today's digital landscape, the right content can make all the difference in capturing your audience's attention and driving engagement. I specialize in creating high-quality, tailored content that resonates with your target audience. Whether you need blog posts, articles, website copy, or social media content, my writing is designed to align with your brand's voice and objectives.",
+    description2:
+      "Understanding your audience is crucial to successful content writing. I conduct thorough research to identify the interests, preferences, and pain points of your target demographic. This allows me to craft compelling narratives that not only inform but also inspire action. By incorporating SEO best practices, I ensure that your content ranks well on search engines, enhancing visibility and attracting organic traffic.",
+    description3:
+      "Additionally, I emphasize storytelling as a powerful tool in content creation. Each piece I write is infused with engaging anecdotes and relatable examples that help convey your message effectively. This storytelling approach not only captivates readers but also fosters a deeper emotional connection with your brand, encouraging loyalty and repeat engagement.",
+    description4:
+      "Lastly, I believe in the importance of collaboration and feedback. I work closely with clients throughout the writing process, ensuring that the final product meets your expectations and goals. With a commitment to quality and a passion for words, I am dedicated to helping your business thrive in a competitive market through strategic and impactful content writing",
+    image: "/assets/service/content-writing.png",
+  },
   "document-creation": {
     title: "Document Creation",
     description1:
@@ -46,6 +82,18 @@ const serviceDetails = {
     description4:
       "Ultimately, my goal is to empower businesses by providing them with documents that elevate their messaging. By collaborating closely with clients, I strive to deliver results that exceed expectations, helping you build stronger connections with your audience. With my Document Creation service, you can confidently present your ideas and proposals, knowing that they are communicated effectively and professionally.",
     image: "/assets/service/document-creation.png",
+  },
+  "custom-service": {
+    title: "Custom Service",
+    description1:
+      "Your business is unique, and so are your needs. My Custom Service offering is designed to provide tailored solutions that address your specific challenges and objectives. Whether you require a combination of services, a specialized project, or a creative solution to a complex problem, I am here to help you bring your vision to life.",
+    description2:
+      "My approach to custom services is rooted in collaboration and innovation. I work closely with clients to understand their goals, constraints, and expectations, ensuring that the final product meets their requirements. By combining creativity with technical expertise, I develop customized solutions that are not only effective but also scalable and sustainable.",
+    description3:
+      "From concept to execution, I prioritize transparency and communication, keeping clients informed and engaged throughout the process. This collaborative approach fosters creativity and ensures that the final product aligns perfectly with your vision. Whether you need a comprehensive digital strategy, a unique branding solution, or a custom software application, I have the skills and experience to turn your ideas into reality.",
+    description4:
+      "My commitment to quality, innovation, and client satisfaction drives me to deliver exceptional results that exceed expectations. I understand that every business is different, and I am dedicated to providing you with a custom service that is tailored to your specific needs. Let’s work together to create something truly remarkable that sets your business apart in a competitive market.",
+    image: "/assets/service/custom-service.png",
   },
 };
 
