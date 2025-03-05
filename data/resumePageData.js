@@ -22,6 +22,7 @@ import {
   SiLaravel,
   SiAppwrite,
   SiTrello,
+  SiJira,
   SiVisualstudiocode,
   SiC,
   SiGithub,
@@ -75,54 +76,29 @@ const experience = {
     "With over three years of web development experience, I have utilized various technologies and frameworks to create robust, user-friendly applications that meet client needs.",
   items: [
     {
-      position: "Frontend Developer",
-      company: "Freelance",
-      date: "2024 - Present",
+      position: "Software Engineer Intern",
+      company: "ICIEOS (PVT) LTD",
+      date: "Mar 2025 - Present",
     },
     {
-      position: "Full Stack Developer",
-      company: "Smart Tech Solutions",
-      date: "2023 Jun - 2024",
+      position: "Undergraduate",
+      company: "Faculty of Computing | SUSL",
+      date: "Aug 2022 - Present",
     },
     {
-      position: "UI/Ux Designer",
-      company: "Freelance",
-      date: "2022 Sep - 2023 Jun",
+      position: "Event Coordinator",
+      company: "SOCS | SUSL",
+      date: "Oct 2024 - Nov 2024",
     },
     {
-      position: "Trainee Intern",
+      position: "Internship Trainee",
       company: "People's Bank",
-      date: "2022 Feb - 2022 Aug",
+      date: "Feb 2022 - Aug 2022",
     },
     {
-      position: "Assistant Intern",
+      position: "Internship Trainee",
       company: "Bank of Ceylon",
-      date: "2021 Jul - 2022 Mar",
-    },
-    {
-      position: "E-commerce Startup",
-      company: "Freelance Web Developer",
-      date: "2021 - 2022 Sep",
-    },
-    {
-      position: "UI/Ux Designer",
-      company: "Design Studio",
-      date: "2020 - 2021",
-    },
-    {
-      position: "Junior Video Editor",
-      company: "ModernViz Inc.",
-      date: "2020 Feb - 2020",
-    },
-    {
-      position: "Documentary Filmmaker",
-      company: "AloneMax Station",
-      date: "2019 - 2020 Feb",
-    },
-    {
-      position: "Content Creator",
-      company: "Freelance",
-      date: "2018 - 2019",
+      date: "Jul 2021 - Mar 2022",
     },
   ],
 };
@@ -133,8 +109,8 @@ const education = {
     "I am an undergraduate with a BSc(Hons.) in Computing & Information Systems (CIS) from the Sabaragamuwa University of Sri Lanka.",
   items: [
     {
-      degree: "BSc(Hons) in Computing & Information Systems",
-      university: "Sabaragamuwa University",
+      degree: "BSc. (Hons) in Computing & Information Systems",
+      university: "SUSL, Belihuloya",
       date: "2022 - Present",
     },
     {
@@ -169,12 +145,12 @@ const education = {
     },
     {
       degree: "General Certificate of Education (G.C.E) A/L",
-      university: "St. Aloysisus College, Galle",
+      university: "St. Aloysisus' College, Galle",
       date: "2018 - 2020",
     },
     {
       degree: "General Certificate of Education (G.C.E) O/L",
-      university: "All Saints College, Galle",
+      university: "All Saints' College, Galle",
       date: "2017 - 2019",
     },
   ],
@@ -284,6 +260,10 @@ const skills = {
     {
       icon: <SiTrello />,
       name: "Trello",
+    },
+    {
+      icon: <SiJira />,
+      name: "Jira",
     },
     {
       icon: <SiFigma />,
