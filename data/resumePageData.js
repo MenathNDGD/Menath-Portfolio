@@ -1,4 +1,4 @@
-import { FaJava } from "react-icons/fa";
+import { FaJava, FaAws } from "react-icons/fa";
 import {
   SiHtml5,
   SiCss3,
@@ -232,6 +232,10 @@ const skills = {
     {
       icon: <SiFirebase />,
       name: "Firebase",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS",
     },
     {
       icon: <SiMysql />,
