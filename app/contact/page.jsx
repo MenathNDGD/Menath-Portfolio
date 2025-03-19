@@ -2,11 +2,16 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+import { FaSpinner } from "react-icons/fa";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
+import info from "@/data/contactPageData";
+import { PhoneInput } from "@/components/PhoneInput";
+import MessageDialog from "@/components/MessageDialog";
 import {
   Select,
   SelectContent,
@@ -16,11 +21,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { PhoneInput } from "@/components/PhoneInput";
-import MessageDialog from "@/components/MessageDialog";
-import emailjs from "emailjs-com";
-import { FaSpinner } from "react-icons/fa";
-import info from "@/data/contactPageData";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
