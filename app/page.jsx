@@ -1,22 +1,9 @@
-"use client";
-
-import { FiDownload } from "react-icons/fi";
-import { Button } from "@/components/ui/button";
-
 import Socials from "@/components/Socials";
 import ProfilePic from "@/components/ProfilePic";
 import Stats from "@/components/Stats";
+import DownloadButton from "@/components/DownloadButton";
 
 const Home = () => {
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/myCV.pdf";
-    link.download = "Menath_Nadungoda_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <section className="h-full">
       <div className="container h-full mx-auto">
@@ -36,15 +23,7 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col items-center gap-8 xl:flex-row">
-              <Button
-                variant="outline"
-                size="lg"
-                className="flex items-center gap-2 uppercase"
-                onClick={handleDownload}
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <DownloadButton />
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles={"flex gap-6"}
