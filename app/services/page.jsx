@@ -1,8 +1,9 @@
 "use client";
 
-import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { BsArrowDownRight } from "react-icons/bs";
+
 import { ScrollArea } from "@/components/ui/scroll-area";
 import services from "@/data/servicesPageData";
 
