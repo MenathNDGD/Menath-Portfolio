@@ -1,9 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+
+import { about, education, experience, skills } from "@/data/resumePageData";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import {
   Tooltip,
@@ -11,7 +13,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { about, education, experience, skills } from "@/data/resumePageData";
 
 const Resume = () => {
   const [emailCopyStatus, setEmailCopyStatus] = useState("Copy Email");
