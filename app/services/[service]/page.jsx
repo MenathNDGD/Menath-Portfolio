@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
 import ServiceNotFound from "@/components/ServiceNotFound";
