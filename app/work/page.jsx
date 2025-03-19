@@ -4,17 +4,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+
+import projects from "@/data/workPageData";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import WorkSliderBtns from "@/components/WorkSliderBtns";
-import projects from "@/data/workPageData";
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
