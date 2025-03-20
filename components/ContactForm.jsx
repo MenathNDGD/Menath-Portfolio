@@ -112,6 +112,7 @@ const ContactForm = () => {
     setFormData({ ...formData, [name]: value });
     setErrors({ ...errors, [name]: "" });
   };
+  
   return (
     <>
       <form
@@ -201,7 +202,11 @@ const ContactForm = () => {
         <div className="flex flex-col gap-1">
           <Textarea
             className="h-[200px]"
-            placeholder="What’s on your mind? Let me know here..."
+            placeholder={
+              formData.service
+                ? `Please provide details about your ${formData.service.toLowerCase()} request.`
+                : "What’s on your mind? Let me know here..."
+            }
             name="message"
             value={formData.message}
             onChange={handleInputChange}
