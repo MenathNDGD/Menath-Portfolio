@@ -2,7 +2,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
-// INFO: Importing the components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import PageTransitionEffect from "@/components/PageTransitionEffect";
