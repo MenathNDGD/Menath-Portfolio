@@ -1,9 +1,7 @@
-"use client";
-
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { BsArrowDownRight } from "react-icons/bs";
 
+import MotionWrapper from "@/components/MotionWrapper";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import services from "@/data/servicesPageData";
 
@@ -11,14 +9,7 @@ const Services = () => {
   return (
     <section className="min-h-[80vh] flex flex-col py-12 justify-center xl:py-0">
       <div className="container mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{
-            opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-          }}
-          className="flex flex-col justify-center"
-        >
+        <MotionWrapper as="div" className={"flex flex-col justify-center"}>
           <ScrollArea className="h-[500px] px-1">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] p-4">
               {services.map((item, index) => (
@@ -46,7 +37,7 @@ const Services = () => {
               ))}
             </div>
           </ScrollArea>
-        </motion.div>
+        </MotionWrapper>
       </div>
     </section>
   );
