@@ -1,12 +1,7 @@
-"use client";
-
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-
-import { about, education, experience, skills } from "@/data/resumePageData";
+import MotionWrapper from "@/components/MotionWrapper";
+import CopyContactInfo from "@/components/CopyContactInfo";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Button } from "@/components/ui/button";
 import {
   Tooltip,
   TooltipContent,
@@ -14,36 +9,13 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
+import { about, education, experience, skills } from "@/data/resumePageData";
+
 const Resume = () => {
-  const [emailCopyStatus, setEmailCopyStatus] = useState("Copy Email");
-  const [phoneCopyStatus, setPhoneCopyStatus] = useState("Copy Phone");
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText("nadungmenath1@gmail.com").then(() => {
-      setEmailCopyStatus("Copied!");
-      setTimeout(() => {
-        setEmailCopyStatus("Copy Email");
-      }, 5000);
-    });
-  };
-
-  const handleCopyPhone = () => {
-    navigator.clipboard.writeText("(+94) 76 549 3072").then(() => {
-      setPhoneCopyStatus("Copied!");
-      setTimeout(() => {
-        setPhoneCopyStatus("Copy Phone");
-      }, 5000);
-    });
-  };
-
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+    <MotionWrapper
+      as="div"
+      className={"min-h-[80vh] flex items-center justify-center py-12 xl:py-0"}
     >
       <div className="container mx-auto">
         <Tabs
@@ -79,20 +51,10 @@ const Resume = () => {
                             {item.fieldValue}
                           </h3>
                           {item.fieldName === "Email" && (
-                            <Button
-                              onClick={handleCopyEmail}
-                              className="px-3 py-1 mt-0 text-sm text-white bg-gray-900 rounded-lg hover:bg-gray-800"
-                            >
-                              {emailCopyStatus}
-                            </Button>
+                            <CopyContactInfo email="nadungmenath1@gmail.com" />
                           )}
                           {item.fieldName === "Mobile" && (
-                            <Button
-                              onClick={handleCopyPhone}
-                              className="px-3 py-1 mt-0 text-sm text-white bg-gray-900 rounded-lg hover:bg-gray-800"
-                            >
-                              {phoneCopyStatus}
-                            </Button>
+                            <CopyContactInfo phone="(+94) 76 549 3072" />
                           )}
                         </li>
                       );
@@ -194,7 +156,7 @@ const Resume = () => {
           </div>
         </Tabs>
       </div>
-    </motion.div>
+    </MotionWrapper>
   );
 };
 
