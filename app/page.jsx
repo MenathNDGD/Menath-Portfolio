@@ -2,6 +2,7 @@ import Socials from "@/components/Socials";
 import ProfilePic from "@/components/ProfilePic";
 import Stats from "@/components/Stats";
 import DownloadButton from "@/components/DownloadButton";
+import TypingEffect from "@/components/TypingEffect";
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
       <div className="container h-full mx-auto">
         <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pb-24">
           <div className="order-2 text-center xl:text-left xl:order-none">
-            <span className="text-xl">Full Stack Developer</span>
+            <TypingEffect />
             <h1 className="mb-6 h1">
               Hello, I'm <br />{" "}
               <span className="text-accent">Menath Nadungoda</span>
