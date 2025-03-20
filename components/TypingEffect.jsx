@@ -16,13 +16,13 @@ const TypingEffect = () => {
     typewriter
       .typeString("Full Stack Developer")
       .pauseFor(1000)
-      .deleteAll(1)
+      .deleteAll(50)
       .typeString("Software Engineer")
       .pauseFor(1000)
-      .deleteAll(1)
+      .deleteAll(50)
       .typeString("Web Developer")
       .pauseFor(1000)
-      .deleteAll(1)
+      .deleteAll(50)
       .start();
 
     return () => typewriter.stop();
