@@ -1,7 +1,10 @@
-import { CheckIcon, ChevronsUpDown } from "lucide-react";
 import * as React from "react";
+import { CheckIcon, ChevronsUpDown } from "lucide-react";
 import * as RPNInput from "react-phone-number-input";
 import flags from "react-phone-number-input/flags";
+
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
   Command,
@@ -11,14 +14,13 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { Input } from "@/components/ui/input";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+
 import { cn } from "@/lib/utils";
-import { ScrollArea } from "./ui/scroll-area";
 
 const PhoneInput = React.forwardRef(
   ({ className, onChange, ...props }, ref) => {
