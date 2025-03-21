@@ -1,9 +1,8 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 
-// INFO: Importing the components
 import RadialTransition from "./RadialTransition";
 
 const PageTransitionEffect = () => {
