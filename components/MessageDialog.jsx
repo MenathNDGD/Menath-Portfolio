@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import { FaPaperPlane } from "react-icons/fa";
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -10,7 +11,6 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
-import { FaPaperPlane } from "react-icons/fa";
 
 const MessageDialog = ({ isOpen, onClose }) => {
   return (
