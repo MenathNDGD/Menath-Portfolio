@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { CiMenuFries } from "react-icons/ci";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { CiMenuFries } from "react-icons/ci";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
