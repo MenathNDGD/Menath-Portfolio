@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import MotionWrapper from "@/components/MotionWrapper";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
+import MotionWrapper from "@/components/MotionWrapper";
 import ServiceNotFound from "@/components/ServiceNotFound";
+
 import serviceDetails from "@/data/serviceDetailsData";
 
 const ServicePage = ({ params }) => {
