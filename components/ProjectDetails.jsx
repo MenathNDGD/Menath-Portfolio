@@ -9,6 +9,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
 } from "@/components/ui/carousel";
 import {
   Tooltip,
@@ -112,6 +114,12 @@ const ProjectDetails = ({ projects }) => {
               </CarouselItem>
             ))}
           </CarouselContent>
+          {currentIndex > 0 && (
+            <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 rounded-full p-2" />
+          )}
+          {currentIndex < projects.length - 1 && (
+            <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2 z-20 bg-white/20 rounded-full p-2" />
+          )}
         </Carousel>
         <div className="hidden md:block text-lg text-center text-white/60 mt-4">
           Project {currentIndex + 1} of {projects.length}
