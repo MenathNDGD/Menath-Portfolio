@@ -112,7 +112,7 @@ const ContactForm = () => {
     setFormData({ ...formData, [name]: value });
     setErrors({ ...errors, [name]: "" });
   };
-  
+
   return (
     <>
       <form
