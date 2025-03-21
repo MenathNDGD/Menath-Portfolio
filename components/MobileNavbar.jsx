@@ -1,12 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Button } from "./ui/button";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
+
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+
 import navLinks from "@/data/navbarData";
 
 const MobileNavbar = () => {
