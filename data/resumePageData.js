@@ -9,6 +9,7 @@ import {
   SiPython,
   SiTailwindcss,
   SiNextdotjs,
+  SiWordpress,
   SiTypescript,
   SiJavascript,
   SiMongodb,
@@ -192,6 +193,10 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       name: "Next JS",
+    },
+    {
+      icon: <SiWordpress />,
+      name: "WordPress",
     },
     {
       icon: <SiNodedotjs />,
