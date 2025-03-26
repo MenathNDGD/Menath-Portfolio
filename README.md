@@ -45,19 +45,19 @@ Welcome to my personal portfolio! This project is a showcase of my skills, proje
 
 ## <a name="features">🔋 Features</a>
 
-👉 **Responsive Design**:  Optimized for mobile, tablet, and desktop viewing, ensuring a seamless browsing experience across all devices
+👉 **Responsive Design**: Optimized for mobile, tablet, and desktop viewing, ensuring a seamless browsing experience across all devices
 
-👉 **Interactive User Interface**:  Includes animations and transitions for a smooth browsing experience
+👉 **Interactive User Interface**: Includes animations and transitions for a smooth browsing experience
 
-👉 **Project Showcase**:  Displays a collection of my projects with detailed descriptions, technologies used, and live demos, and source code.
+👉 **Project Showcase**: Displays a collection of my projects with detailed descriptions, technologies used, and live demos, and source code.
 
-👉 **Contact Form**:  Allows visitors to reach out directly via a simple and effective form
+👉 **Contact Form**: Allows visitors to reach out directly via a simple and effective form
 
-👉 **Smooth Scrolling & Navigation**:  Features smooth scrolling and intuitive navigation for a pleasant browsing experience
+👉 **Smooth Scrolling & Navigation**: Features smooth scrolling and intuitive navigation for a pleasant browsing experience
 
-👉 **SEO Optimization**:  Integrated with SEO best practices for improved visibility and search engine ranking
+👉 **SEO Optimization**: Integrated with SEO best practices for improved visibility and search engine ranking
 
-👉 **Framer Motion Animations**:  Enhanced with smooth, eye-catching animations using Framer Motion to create an engaging user interface
+👉 **Framer Motion Animations**: Enhanced with smooth, eye-catching animations using Framer Motion to create an engaging user interface
 
 and many more, including code architecture and reusability.
 
@@ -88,6 +88,18 @@ Install the project dependencies using npm:
 npm install
 ```
 
+**Set Up Environment Variables**
+
+Create a new file named `.env` in the root of your project and add the following content:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
+NEXT_PUBLIC_EMAILJS_USER_ID=
+```
+
+Replace the placeholder values with your actual credentials. You can obtain these credentials by signing up on the [EmailJS](https://www.emailjs.com/) website.
+
 **Running the Project**
 
 ```bash
@@ -95,6 +107,7 @@ npm run dev
 ```
 
 **Build for Production**
+
 ```bash
 npm run build
 ```
