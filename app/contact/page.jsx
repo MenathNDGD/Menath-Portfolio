@@ -4,6 +4,14 @@ import MotionWrapper from "@/components/MotionWrapper";
 
 import info from "@/data/contactPageData";
 
+export const metadata = {
+  title: "Menath Nadungoda | Contact",
+  description:
+    "Contact me for any inquiries or to discuss your project requirements.",
+  keywords:
+    "Menath Nadungoda, Menath, Nadungoda, contact, contact me, contact form, contact information, contact details, contact page, contact form submission, contact form submission success, contact form submission failed",
+};
+
 const Contact = () => {
   return (
     <MotionWrapper as="section" className={"py-6"}>
