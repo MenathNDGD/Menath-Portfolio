@@ -8,6 +8,23 @@ import ServiceNotFound from "@/components/ServiceNotFound";
 
 import serviceDetails from "@/data/serviceDetailsData";
 
+export async function generateMetadata({ params }) {
+  const { service } = params;
+  const serviceData = serviceDetails[service];
+
+  if (!serviceData) {
+    return {
+      title: "Service Not Found",
+      description: "Service not found.",
+    };
+  }
+
+  return {
+    title: `My Service | ${serviceData.title}`,
+    description: serviceData.description1,
+  };
+}
+
 const ServicePage = ({ params }) => {
   const { service } = params;
   const serviceData = serviceDetails[service];
