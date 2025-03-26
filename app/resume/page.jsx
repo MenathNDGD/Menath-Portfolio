@@ -11,6 +11,13 @@ import {
 
 import { about, education, experience, skills } from "@/data/resumePageData";
 
+export const metadata = {
+  title: "Menath Nadungoda | Resume",
+  description: "My educational background, work experience, and skills.",
+  keywords:
+    "Menath Nadungoda, Menath, Nadungoda, Resume, Education, Work Experience, Skills, About me",
+};
+
 const Resume = () => {
   return (
     <MotionWrapper
