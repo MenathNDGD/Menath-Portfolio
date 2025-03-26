@@ -3,6 +3,12 @@ import ProjectDetails from "@/components/ProjectDetails";
 
 import projects from "@/data/workPageData";
 
+export const metadata = {
+  title: "Menath Nadungoda | Work",
+  description: "My projects and work experience.",
+  keywords: "Menath Nadungoda, Menath, Nadungoda, Work, Projects, Experience",
+};
+
 const Work = () => {
   return (
     <MotionWrapper
