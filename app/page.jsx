@@ -4,6 +4,12 @@ import Stats from "@/components/Stats";
 import DownloadButton from "@/components/DownloadButton";
 import TypingEffect from "@/components/TypingEffect";
 
+export const metadata = {
+  title: "Menath Nadungoda | Welcome",
+  description: "Menath Nadungoda's personal website",
+  keywords: "Menath Nadungoda, Menath, Nadungoda, Web Developer, Full Stack Developer, Software Engineer",
+};
+
 const Home = () => {
   return (
     <section className="h-full">
