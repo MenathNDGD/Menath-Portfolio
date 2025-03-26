@@ -5,6 +5,13 @@ import MotionWrapper from "@/components/MotionWrapper";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import services from "@/data/servicesPageData";
 
+export const metadata = {
+  title: "Menath Nadungoda | Services",
+  description: "Services offered by me.",
+  keywords:
+    "Menath Nadungoda, Menath, Nadungoda, Services, Web Development, Software Development, Full Stack Development, Logo Design, Graphic Design, UI/UX Design, Video Editing, Content Writing, Documentation, Document Creation",
+};
+
 const Services = () => {
   return (
     <section className="min-h-[80vh] flex flex-col py-12 justify-center xl:py-0">
