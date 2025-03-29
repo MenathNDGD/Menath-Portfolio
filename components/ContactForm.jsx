@@ -33,39 +33,54 @@ const ContactForm = () => {
   const [isSending, setIsSending] = useState(false);
   const [errors, setErrors] = useState({});
 
+  const validateForm = (data) => {
+    const newErrors = {};
+
+    if (!data.firstName.trim()) {
+      newErrors.firstName = "First name is required!";
+    }
+
+    if (!data.lastName.trim()) {
+      newErrors.lastName = "Last name is required!";
+    }
+
+    if (!data.email.trim()) {
+      newErrors.email = "Email is required!";
+    } else if (!/\S+@\S+\.\S+/.test(data.email)) {
+      newErrors.email = "Invalid email address!";
+    }
+
+    if (!data.phone.trim()) {
+      newErrors.phone = "Phone number is required!";
+    }
+
+    if (!data.service) {
+      newErrors.service = "Please select a service!";
+    }
+
+    if (!data.message.trim()) {
+      newErrors.message = "Message is required!";
+    }
+
+    return newErrors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSending(true);
-    setErrors({});
 
-    const newErrors = {};
-
-    if (!formData.firstName) {
-      newErrors.firstName = "First name is required.";
-    }
-    if (!formData.lastName) {
-      newErrors.lastName = "Last name is required.";
-    }
-    if (!formData.email) {
-      newErrors.email = "Email is required.";
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Invalid email address.";
-    }
-    if (!formData.phone) {
-      newErrors.phone = "Phone number is required.";
-    }
-    if (!formData.service) {
-      newErrors.service = "Please select a service.";
-    }
-    if (!formData.message) {
-      newErrors.message = "Message is required.";
-    }
-
-    if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
+    const validationErrors = validateForm(formData);
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
       setIsSending(false);
+
+      const firstErrorField = Object.keys(validationErrors)[0];
+      document.getElementsByName(firstErrorField)[0]?.focus();
+
       return;
     }
+
+    setErrors({});
 
     const fullName = `${formData.firstName} ${formData.lastName}`;
 
@@ -125,56 +140,104 @@ const ContactForm = () => {
           below, and I'll get back to you as soon as possible.
         </p>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col">
             <Input
               type="text"
               name="firstName"
               placeholder="First Name"
+              autoComplete="given-name"
+              autoCorrect="off"
               value={formData.firstName}
               onChange={handleInputChange}
+              aria-label="First Name"
+              aria-invalid={!!errors.firstName}
+              aria-describedby="firstName-error"
             />
-            {errors.firstName && (
-              <p className="text-red-500">{errors.firstName}</p>
-            )}
+            <div
+              id="firstName-error"
+              className={`text-red-500 italic h-3 ${
+                errors.firstName ? "visible" : "invisible"
+              }`}
+            >
+              {errors.firstName}
+            </div>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col">
             <Input
               type="text"
               name="lastName"
               placeholder="Last Name"
+              autoComplete="family-name"
+              autoCorrect="off"
               value={formData.lastName}
               onChange={handleInputChange}
+              aria-label="Last Name"
+              aria-invalid={!!errors.lastName}
+              aria-describedby="lastName-error"
             />
-            {errors.lastName && (
-              <p className="text-red-500">{errors.lastName}</p>
-            )}
+            <div
+              id="lastName-error"
+              className={`text-red-500 italic h-3 ${
+                errors.lastName ? "visible" : "invisible"
+              }`}
+            >
+              {errors.lastName}
+            </div>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col">
             <Input
               type="text"
               name="email"
               placeholder="Email Address"
+              autoComplete="email"
+              autoCorrect="off"
               value={formData.email}
               onChange={handleInputChange}
+              aria-label="Email Address"
+              aria-invalid={!!errors.email}
+              aria-describedby="email-error"
             />
-            {errors.email && <p className="text-red-500">{errors.email}</p>}
+            <div
+              id="email-error"
+              className={`text-red-500 italic h-3 ${
+                errors.email ? "visible" : "invisible"
+              }`}
+            >
+              {errors.email}
+            </div>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col">
             <PhoneInput
               placeholder="Phone Number"
+              defaultCountry="LK"
+              autoComplete="tel"
+              autoCorrect="off"
               value={formData.phone}
               onChange={(phone) => setFormData({ ...formData, phone })}
               className="flex items-center w-full"
+              aria-label="Phone Number"
+              aria-invalid={!!errors.phone}
+              aria-describedby="phone-error"
             />
-            {errors.phone && <p className="text-red-500">{errors.phone}</p>}
+            <div
+              id="phone-error"
+              className={`text-red-500 italic h-3 ${
+                errors.phone ? "visible" : "invisible"
+              }`}
+            >
+              {errors.phone}
+            </div>
           </div>
         </div>
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col">
           <Select
             onValueChange={(value) =>
               setFormData({ ...formData, service: value })
             }
             value={formData.service}
+            aria-label="Select a Service"
+            aria-invalid={!!errors.service}
+            aria-describedby="service-error"
           >
             <SelectTrigger className="w-full">
               <SelectValue placeholder="Select a Service" />
@@ -197,11 +260,18 @@ const ContactForm = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
-          {errors.service && <p className="text-red-500">{errors.service}</p>}
+          <div
+            id="service-error"
+            className={`text-red-500 italic h-3 ${
+              errors.service ? "visible" : "invisible"
+            }`}
+          >
+            {errors.service}
+          </div>
         </div>
         <div className="flex flex-col gap-1">
           <Textarea
-            className="h-[200px]"
+            className="h-[150px]"
             placeholder={
               formData.service
                 ? `Please provide details about your ${formData.service.toLowerCase()} request.`
@@ -210,8 +280,18 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
+            aria-label="Message"
+            aria-invalid={!!errors.message}
+            aria-describedby="message-error"
           />
-          {errors.message && <p className="text-red-500">{errors.message}</p>}
+          <div
+            id="message-error"
+            className={`text-red-500 italic h-3 ${
+              errors.message ? "visible" : "invisible"
+            }`}
+          >
+            {errors.message}
+          </div>
         </div>
         <Button
           size="md"
