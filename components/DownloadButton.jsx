@@ -4,10 +4,12 @@ import { FiDownload } from "react-icons/fi";
 
 import { Button } from "@/components/ui/button";
 
+import { documents } from "@/utils/assets";
+
 const DownloadButton = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/assets/myCV.pdf";
+    link.href = documents.resume;
     link.download = "Menath_Nadungoda_CV.pdf";
     document.body.appendChild(link);
     link.click();
