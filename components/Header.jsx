@@ -6,13 +6,15 @@ import { Button } from "./ui/button";
 import Navbar from "./Navbar";
 import MobileNavbar from "./MobileNavbar";
 
+import { images } from "@/utils/assets";
+
 const Header = () => {
   return (
     <header className="py-8 text-white xl:py-12">
       <div className="container flex items-center justify-between mx-auto">
         <Link href={"/"} className="flex items-center">
           <Image
-            src="/assets/logo.png"
+            src={images.logo}
             alt="Menath Nadungoda"
             width={40}
             height={40}
