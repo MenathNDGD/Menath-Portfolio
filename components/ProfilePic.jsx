@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import { images } from "@/utils/assets";
+
 const ProfilePic = () => {
   return (
     <div className="relative flex items-center justify-center w-full h-full">
@@ -22,7 +24,7 @@ const ProfilePic = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src={"/assets/myPic.png"}
+            src={images.hero}
             priority
             quality={100}
             fill
