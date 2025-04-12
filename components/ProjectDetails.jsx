@@ -27,6 +27,10 @@ const ProjectDetails = ({ projects }) => {
     setCurrentIndex(index);
   };
 
+  const formatProjectNumber = (num) => {
+    return num < 10 ? `0${num}` : `${num}`;
+  };
+
   return (
     <div className="flex flex-col xl:flex-row xl:gap-[30px]">
       <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
@@ -122,7 +126,8 @@ const ProjectDetails = ({ projects }) => {
           )}
         </Carousel>
         <div className="hidden md:block text-lg text-center text-white/60 mt-4">
-          Project {currentIndex + 1} of {projects.length}
+          Project {formatProjectNumber(currentIndex + 1)} of{" "}
+          {formatProjectNumber(projects.length)}
         </div>
       </div>
     </div>
