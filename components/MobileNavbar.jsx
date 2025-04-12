@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button";
 
 import navLinks from "@/data/navbarData";
 
+import { images } from "@/utils/assets";
+
 const MobileNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -29,7 +31,7 @@ const MobileNavbar = () => {
         <div className="mt-32 mb-40 text-2xl text-center">
           <Link href={"/"} className="flex items-center justify-center gap-2">
             <Image
-              src="/assets/logo.png"
+              src={images.logo}
               alt="Menath Nadungoda"
               width={40}
               height={40}
