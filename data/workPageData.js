@@ -17,6 +17,8 @@ import {
   SiShadcnui,
 } from "react-icons/si";
 
+import { projectImages } from "@/utils/assets";
+
 const projects = [
   {
     num: "01",
@@ -29,7 +31,7 @@ const projects = [
       { icon: <SiCss3 />, name: "CSS 3" },
       { icon: <SiJavascript />, name: "JavaScript" },
     ],
-    image: "/assets/work/carRent4U.png",
+    image: projectImages.project1,
     live: "https://car-rent4-u-front-end-ui.vercel.app/",
     github: "https://github.com/MenathNDGD/CarRent4U_-Front-end-_UI.git",
   },
@@ -47,7 +49,7 @@ const projects = [
       { icon: <SiMysql />, name: "MySQL" },
       { icon: <SiPrisma />, name: "Prisma" },
     ],
-    image: "/assets/work/eduQuest.png",
+    image: projectImages.project2,
     live: "https://edu-quest-lms-next-js.vercel.app/sign-in",
     github: "https://github.com/MenathNDGD/EduQuest-LMS-Platform.git",
   },
@@ -65,7 +67,7 @@ const projects = [
       { icon: <SiAppwrite />, name: "Appwrite" },
       { icon: <SiTwilio />, name: "Twilio" },
     ],
-    image: "/assets/work/careSync.png",
+    image: projectImages.project3,
     live: "https://care-sync-three.vercel.app/",
     github: "https://github.com/MenathNDGD/CareSync.git",
   },
@@ -83,7 +85,7 @@ const projects = [
       { icon: <SiStripe />, name: "Stripe" },
       { icon: <SiMongodb />, name: "MongoDB" },
     ],
-    image: "/assets/work/eComPlatform.png",
+    image: projectImages.project4,
     live: "https://mern-ecommerce-platform.vercel.app/",
     github: "https://github.com/MenathNDGD/MERN-Ecommerce-Platform.git",
   },
@@ -100,7 +102,7 @@ const projects = [
       { icon: <SiJavascript />, name: "JavaScript" },
       { icon: <SiFirebase />, name: "Firebase" },
     ],
-    image: "/assets/work/ecoBin.png",
+    image: projectImages.project5,
     live: "https://eco-bin-website.vercel.app/",
     github: "https://github.com/MenathNDGD/EcoBin_Website.git",
   },
@@ -116,7 +118,7 @@ const projects = [
       { icon: <SiJavascript />, name: "JavaScript" },
       { icon: <SiMongodb />, name: "MongoDB" },
     ],
-    image: "/assets/work/trendify.png",
+    image: projectImages.project6,
     live: "https://mern-ecommerce-lake-one.vercel.app/",
     github: "https://github.com/MenathNDGD/MERN-Ecommerce.git",
   },
@@ -132,7 +134,7 @@ const projects = [
       { icon: <SiCss3 />, name: "CSS 3" },
       { icon: <SiJavascript />, name: "JavaScript" },
     ],
-    image: "/assets/work/tastyTrails.png",
+    image: projectImages.project7,
     live: "https://tasty-trails-food-delivery-react-php.vercel.app/",
     github:
       "https://github.com/MenathNDGD/TastyTrails-FoodDelivery-ReactPHP.git",
@@ -151,7 +153,7 @@ const projects = [
       { icon: <SiTailwindcss />, name: "Tailwind CSS" },
       { icon: <SiShadcnui />, name: "Shadcn UI" },
     ],
-    image: "/assets/work/nextBank.png",
+    image: projectImages.project8,
     live: "https://next-bank-weld.vercel.app/sign-in",
     github: "https://github.com/MenathNDGD/NextBank.git",
   },
