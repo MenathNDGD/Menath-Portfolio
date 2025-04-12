@@ -19,6 +19,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import { sendContactEmail } from "@/services/emailJSService";
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -65,7 +67,7 @@ const ContactForm = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSending(true);
 
@@ -82,31 +84,31 @@ const ContactForm = () => {
 
     setErrors({});
 
-    const fullName = `${formData.firstName} ${formData.lastName}`;
-
-    emailjs
-      .send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: fullName,
-          to_name: "Recipient Name",
-          email: formData.email,
-          phone: formData.phone,
-          service: formData.service,
-          message: formData.message,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-      )
-      .then(
-        (result) => {
-          setDialogOpen(true);
-          setIsSending(false);
-        },
-        (error) => {
-          setIsSending(false);
-        }
-      );
+    try {
+      await sendContactEmail(formData);
+      setDialogOpen(true);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setDialogOpen(true);
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: "",
+      });
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const handleCloseDialog = () => {
