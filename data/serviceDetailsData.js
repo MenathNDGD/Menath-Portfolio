@@ -1,3 +1,5 @@
+import { serviceImages } from "@/utils/assets";
+
 const serviceDetails = {
   "web-development": {
     title: "Web Development",
@@ -9,7 +11,7 @@ const serviceDetails = {
       "My designs are tailored to deliver memorable brand experiences, incorporating visually stunning elements that captivate visitors. I believe that a website should not only look good but also drive conversions. Therefore, I implement best practices in SEO, user interface design, and user experience to ensure that each website I develop effectively communicates the client's message and achieves their business objectives.",
     description4:
       "In addition, I understand the importance of ongoing support and maintenance. I provide clients with the tools and knowledge necessary to manage their websites post-launch, ensuring they remain relevant and effective in an ever-evolving digital landscape. My commitment to quality, innovation, and client satisfaction drives me to exceed expectations and deliver exceptional results.",
-    image: "/assets/service/web-development.png",
+    image: serviceImages.web_dev,
   },
   "web-applications": {
     title: "Web Applications",
@@ -21,7 +23,7 @@ const serviceDetails = {
       "My web applications are designed to automate repetitive tasks, allowing teams to focus on more strategic initiatives. By integrating features such as real-time data analytics, user authentication, and intuitive dashboards, I empower businesses to make informed decisions quickly. Additionally, I prioritize responsiveness and accessibility, ensuring that users can access applications seamlessly across devices and platforms.",
     description4:
       "I also emphasize ongoing support and maintenance, recognizing that the launch of an application is just the beginning. My commitment to client satisfaction includes regular updates and improvements based on user feedback and technological advancements. Whether you are looking to develop a customer relationship management system, an e-commerce platform, or an internal workflow tool, I have the expertise to turn your ideas into reality, helping your business thrive in an ever-evolving marketplace.",
-    image: "/assets/service/web-applications.png",
+    image: serviceImages.web_app,
   },
   "ui-ux-design": {
     title: "UI/UX Design",
@@ -33,7 +35,7 @@ const serviceDetails = {
       "Collaboration plays a vital role in my design process. I work closely with stakeholders, developers, and other team members to align on goals and vision. This collaborative spirit fosters creativity and innovation, allowing us to brainstorm and iterate on ideas that ultimately lead to exceptional user experiences. I believe that a successful design is not just about aesthetics; it’s about functionality and creating meaningful connections with users.",
     description4:
       "Ultimately, my goal is to design experiences that delight and engage users, transforming complex processes into simple, enjoyable interactions. By blending creativity with strategic thinking, I aim to elevate the way users perceive and interact with digital products, ensuring they leave with a positive impression that encourages loyalty and advocacy.",
-    image: "/assets/service/ui-ux-design.png",
+    image: serviceImages.ui_ux,
   },
   "logo-design": {
     title: "Logo Design",
@@ -45,7 +47,7 @@ const serviceDetails = {
       "After establishing initial concepts, I provide you with multiple design options to choose from. Feedback is essential, and I encourage collaboration to refine the designs until they perfectly align with your expectations. This iterative process helps in achieving a logo that is not just aesthetically pleasing but also functional across various platforms, whether it be digital or print.",
     description4:
       "Finally, once the logo is finalized, I deliver a comprehensive branding package that includes various file formats and guidelines for usage. This ensures your logo maintains its integrity across all applications, from business cards to social media. A well-designed logo is an investment in your brand's future, and I'm committed to helping you create a visual identity that leaves a mark.",
-    image: "/assets/service/logo-design.png",
+    image: serviceImages.logo_design,
   },
   "video-editing": {
     title: "Video Editing",
@@ -57,7 +59,7 @@ const serviceDetails = {
       "In addition to technical skills, I emphasize the importance of pacing and flow in video editing. Each project is carefully structured to maintain viewer engagement from start to finish. By incorporating the right visual elements and transitions, I create a seamless viewing experience that captivates audiences. My commitment to quality and creativity ensures that your message is communicated clearly and effectively.",
     description4:
       "Ultimately, my goal is to help your business stand out in a crowded marketplace. With customized video content tailored to your specific needs, I aim to elevate your brand presence and foster a deeper connection with your audience. Let’s collaborate to turn your ideas into compelling videos that leave a lasting impression.",
-    image: "/assets/service/video-editing.png",
+    image: serviceImages.video_editing,
   },
   "content-writing": {
     title: "Content Writing",
@@ -69,7 +71,7 @@ const serviceDetails = {
       "Additionally, I emphasize storytelling as a powerful tool in content creation. Each piece I write is infused with engaging anecdotes and relatable examples that help convey your message effectively. This storytelling approach not only captivates readers but also fosters a deeper emotional connection with your brand, encouraging loyalty and repeat engagement.",
     description4:
       "Lastly, I believe in the importance of collaboration and feedback. I work closely with clients throughout the writing process, ensuring that the final product meets your expectations and goals. With a commitment to quality and a passion for words, I am dedicated to helping your business thrive in a competitive market through strategic and impactful content writing",
-    image: "/assets/service/content-writing.png",
+    image: serviceImages.content_writing,
   },
   "document-creation": {
     title: "Document Creation",
@@ -81,7 +83,7 @@ const serviceDetails = {
       "My expertise extends to various types of documents, including but not limited to business plans, presentations, and user manuals. I pay meticulous attention to detail, ensuring that all content is not only relevant and informative but also formatted for maximum impact. By leveraging industry-standard tools and techniques, I create documents that enhance your professional image and facilitate clear communication.",
     description4:
       "Ultimately, my goal is to empower businesses by providing them with documents that elevate their messaging. By collaborating closely with clients, I strive to deliver results that exceed expectations, helping you build stronger connections with your audience. With my Document Creation service, you can confidently present your ideas and proposals, knowing that they are communicated effectively and professionally.",
-    image: "/assets/service/document-creation.png",
+    image: serviceImages.doc_creation,
   },
   "custom-service": {
     title: "Custom Service",
@@ -93,7 +95,7 @@ const serviceDetails = {
       "From concept to execution, I prioritize transparency and communication, keeping clients informed and engaged throughout the process. This collaborative approach fosters creativity and ensures that the final product aligns perfectly with your vision. Whether you need a comprehensive digital strategy, a unique branding solution, or a custom software application, I have the skills and experience to turn your ideas into reality.",
     description4:
       "My commitment to quality, innovation, and client satisfaction drives me to deliver exceptional results that exceed expectations. I understand that every business is different, and I am dedicated to providing you with a custom service that is tailored to your specific needs. Let’s work together to create something truly remarkable that sets your business apart in a competitive market.",
-    image: "/assets/service/custom-service.png",
+    image: serviceImages.custom_service,
   },
 };
 
