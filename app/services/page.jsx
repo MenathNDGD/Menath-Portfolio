@@ -17,7 +17,7 @@ const Services = () => {
     <section className="min-h-[80vh] flex flex-col py-12 justify-center xl:py-0">
       <div className="container mx-auto">
         <MotionWrapper as="div" className={"flex flex-col justify-center"}>
-          <ScrollArea className="h-[500px] px-1">
+          <ScrollArea className="h-[650px] px-1">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] p-4">
               {services.map((item, index) => (
                 <div
