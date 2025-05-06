@@ -15,7 +15,7 @@
     <img src="https://img.shields.io/badge/Framer%20Motion-0055FF.svg?style=for-the-badge&logo=Framer&logoColor=white" alt="framermotion" />
   </div>
 
-  <h3 align="center">Menath Nadungoda's Portfolio</h3>
+  <h3 align="center">Welcome to My Personal Portfolio</h3>
 
    <div align="center">
      This is my personal portfolio website built with Next.js, styled using Tailwind CSS, and enhanced with Framer Motion for smooth animations. The project showcases my skills, projects, and professional journey as a Full-stack Web Developer, with a focus on responsive design and interactive user experiences.
