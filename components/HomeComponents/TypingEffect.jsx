@@ -1,11 +1,15 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Typewriter from "typewriter-effect/dist/core";
 
 const TypingEffect = () => {
+  const typewriterRef = useRef(null);
+
   useEffect(() => {
-    const typewriter = new Typewriter("#typewriter", {
+    if (!typewriterRef.current) return;
+
+    const typewriter = new Typewriter(typewriterRef.current, {
       autoStart: true,
       loop: true,
       delay: 50,
@@ -25,10 +29,12 @@ const TypingEffect = () => {
       .deleteAll(50)
       .start();
 
-    return () => typewriter.stop();
+    return () => {
+      typewriter.stop();
+    };
   }, []);
 
-  return <span id="typewriter" className="text-xl"></span>;
+  return <span ref={typewriterRef} className="text-xl"></span>;
 };
 
 export default TypingEffect;
