@@ -1,14 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import emailjs from "emailjs-com";
 import { FaSpinner } from "react-icons/fa";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { PhoneInput } from "@/components/PhoneInput";
-import MessageDialog from "@/components/MessageDialog";
+import { PhoneInput } from "@/components/ContactFormComponents/PhoneInput";
+import MessageDialog from "@/components/ContactFormComponents/MessageDialog";
 import {
   Select,
   SelectContent,

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
-import Navbar from "./Navbar";
-import MobileNavbar from "./MobileNavbar";
+import Navbar from "../HeaderComponents/Navbar";
+import MobileNavbar from "../HeaderComponents/MobileNavbar";
 
 import { images } from "@/utils/assets";
 

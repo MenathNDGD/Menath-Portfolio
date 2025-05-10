@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
-import RadialTransition from "./RadialTransition";
+import RadialTransition from "../PageTransitionEffectComponents/RadialTransition";
 
 const PageTransitionEffect = () => {
   const pathname = usePathname();

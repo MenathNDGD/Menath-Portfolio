@@ -1,5 +1,5 @@
-import MotionWrapper from "@/components/MotionWrapper";
-import ProjectDetails from "@/components/ProjectDetails";
+import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
+import ProjectDetails from "@/components/WorkComponents/ProjectDetails";
 
 import projects from "@/data/workPageData";
 

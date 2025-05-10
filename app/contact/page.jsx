@@ -1,6 +1,6 @@
-import ContactForm from "@/components/ContactForm";
-import ContactInfoList from "@/components/ContactInfoList";
-import MotionWrapper from "@/components/MotionWrapper";
+import ContactForm from "@/components/ContactComponents/ContactForm";
+import ContactInfoList from "@/components/ContactComponents/ContactInfoList";
+import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
 
 import info from "@/data/contactPageData";
 

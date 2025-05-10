@@ -1,8 +1,8 @@
-import Socials from "@/components/Socials";
-import ProfilePic from "@/components/ProfilePic";
-import Stats from "@/components/Stats";
-import DownloadButton from "@/components/DownloadButton";
-import TypingEffect from "@/components/TypingEffect";
+import Socials from "@/components/HomeComponents/Socials";
+import ProfilePic from "@/components/HomeComponents/ProfilePic";
+import Stats from "@/components/HomeComponents/Stats";
+import DownloadButton from "@/components/HomeComponents/DownloadButton";
+import TypingEffect from "@/components/HomeComponents/TypingEffect";
 
 export const metadata = {
   title: "Menath Nadungoda | Welcome",

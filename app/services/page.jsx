@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
 
-import MotionWrapper from "@/components/MotionWrapper";
+import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import services from "@/data/servicesPageData";
 

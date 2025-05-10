@@ -2,9 +2,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
 
-import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";
-import PageTransitionEffect from "@/components/PageTransitionEffect";
+import Header from "@/components/CommonComponents/Header";
+import PageTransition from "@/components/CommonComponents/PageTransition";
+import PageTransitionEffect from "@/components/CommonComponents/PageTransitionEffect";
 
 const poppins = Poppins({
   subsets: ["latin"],

@@ -1,5 +1,5 @@
-import MotionWrapper from "@/components/MotionWrapper";
-import CopyContactInfo from "@/components/CopyContactInfo";
+import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
+import CopyContactInfo from "@/components/ResumeComponents/CopyContactInfo";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
