@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaExclamationCircle, FaArrowCircleLeft } from "react-icons/fa";
 
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const ServiceNotFound = () => {
   return (
