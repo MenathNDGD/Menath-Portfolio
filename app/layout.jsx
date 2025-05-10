@@ -1,5 +1,5 @@
-import { Poppins } from "next/font/google";
 import "./globals.css";
+import { Poppins } from "next/font/google";
 import Head from "next/head";
 
 import Header from "@/components/CommonComponents/Header";

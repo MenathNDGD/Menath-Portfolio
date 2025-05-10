@@ -1,5 +1,3 @@
-import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
-import CopyContactInfo from "@/components/ResumeComponents/CopyContactInfo";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
@@ -8,6 +6,9 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+
+import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
+import CopyContactInfo from "@/components/ResumeComponents/CopyContactInfo";
 
 import { about, education, experience, skills } from "@/data/resumePageData";
 

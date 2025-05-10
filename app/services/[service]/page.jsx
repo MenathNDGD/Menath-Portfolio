@@ -3,10 +3,11 @@ import Image from "next/image";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
+
 import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
+import ServiceNotFound from "@/components/ServiceComponents/ServiceNotFound";
 
 import serviceDetails from "@/data/serviceDetailsData";
-import ServiceNotFound from "@/components/ServiceComponents/ServiceNotFound";
 
 export async function generateMetadata({ params }) {
   const { service } = params;
