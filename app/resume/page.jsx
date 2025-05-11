@@ -10,7 +10,12 @@ import {
 import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
 import CopyContactInfo from "@/components/ResumeComponents/CopyContactInfo";
 
-import { about, education, experience, skills } from "@/data/resumePageData";
+import {
+  about,
+  education,
+  experience,
+  skills,
+} from "@/constants/resumePageData";
 
 export const metadata = {
   title: "Menath Nadungoda | Resume",

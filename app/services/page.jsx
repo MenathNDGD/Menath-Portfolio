@@ -4,7 +4,7 @@ import { BsArrowDownRight } from "react-icons/bs";
 import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-import services from "@/data/servicesPageData";
+import services from "@/constants/servicesPageData";
 
 export const metadata = {
   title: "Menath Nadungoda | Services",

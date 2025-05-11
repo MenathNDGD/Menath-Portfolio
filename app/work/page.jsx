@@ -1,7 +1,7 @@
 import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
 import ProjectDetails from "@/components/WorkComponents/ProjectDetails";
 
-import projects from "@/data/workPageData";
+import projects from "@/constants/workPageData";
 
 export const metadata = {
   title: "Menath Nadungoda | Work",

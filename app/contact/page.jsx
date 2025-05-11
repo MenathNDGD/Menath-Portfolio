@@ -2,7 +2,7 @@ import ContactForm from "@/components/ContactComponents/ContactForm";
 import ContactInfoList from "@/components/ContactComponents/ContactInfoList";
 import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
 
-import info from "@/data/contactPageData";
+import info from "@/constants/contactPageData";
 
 export const metadata = {
   title: "Menath Nadungoda | Contact",

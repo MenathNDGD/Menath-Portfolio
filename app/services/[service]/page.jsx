@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import MotionWrapper from "@/components/CommonComponents/MotionWrapper";
 import ServiceNotFound from "@/components/ServiceComponents/ServiceNotFound";
 
-import serviceDetails from "@/data/serviceDetailsData";
+import serviceDetails from "@/constants/serviceDetailsData";
 
 export async function generateMetadata({ params }) {
   const { service } = params;

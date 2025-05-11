@@ -10,7 +10,7 @@ import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
-import navLinks from "@/data/navbarData";
+import navLinks from "@/constants/navbarData";
 
 import { images } from "@/utils/assets";
 
