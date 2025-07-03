@@ -5,16 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 
-// FUNCTION: Clean Firebase URLs to remove query parameters for backend validation
-const cleanFirebaseUrl = (url) => {
-    try {
-        const urlObj = new URL(url);
-        return urlObj.origin + urlObj.pathname;
-    } catch {
-        return url;
-    }
-};
-
 const EventCreationForm = () => {
     const [formData, setFormData] = useState({
         title: '',
