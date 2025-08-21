@@ -18,7 +18,7 @@
   <h3 align="center">Welcome to My Personal Portfolio!</h3>
 
    <div align="center">
-     My personal portfolio website built with Next.js, styled with Tailwind CSS, and brought to life with Framer Motion for smooth, modern animations. It highlights my skills, projects, and journey as a Full-Stack Web Developer, with a strong focus on responsive design and interactive user experiences.
+     ✨ <b>My personal portfolio website</b> is crafted with <b>Next.js</b>, styled elegantly using <b>Tailwind CSS</b>, and enhanced with <b>Framer Motion</b> to deliver smooth, modern animations. It serves as a dynamic showcase of my skills, projects, and growth as a <b>Full-Stack Web Developer</b>, with a strong emphasis on <b>responsive design</b>, <b>seamless interactivit</b>y, and <b>creating engaging user experiences</b> across all devices.
     </div>
 </div>
 
